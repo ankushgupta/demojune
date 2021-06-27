@@ -1,0 +1,124 @@
+  yum install  git -y 
+  146  git --version
+  147  git clone https://github.com/ankushgupta/demojune.git
+  148  ls -l
+  149  cd demojune/
+  150  ls -la
+  151  cd ..
+  152  mkdir local
+  153  cd local/
+  154  ls -la
+  155  git init .
+  156  ls -la
+  157  cd ..
+  158  cd demojune/
+  159  ls -l
+  160  echo "hello world" > file1
+  161  ls -l
+  162  git status
+  163  git add file1 
+  164  git status
+  165  git commit -m "first commit"
+  166  git status
+  167  git log
+  168  git config --list
+  169  git config --help
+  170  git config --global user.name "Ankur"
+  171  git config --global user.email "Ankur@gmail.com"
+  git config --list
+  173  vim file1 
+  174  git status
+  175  git add file1 
+  176  git status
+  177  git commit -m "second commit"
+  178  git log
+  179  git config --list
+  180  git remote -v
+  181  git push origin master
+  182  history 
+  183  ls -l 
+  184  cat file1 
+  185  git pull
+  186  cat file1 
+  187  echo "second file" > file2
+  188  git add file2
+  189  git commit -m "new commit"
+  190  git push
+  191  git pull
+  192  git push
+  193  git checkout -b dev
+  194  git branch
+  195  ls -l
+  196  echo "fle3" > file3
+  197  git add file3
+  198  git commit -m" "file3 commit"
+  199  git commit -m "file3 commit"
+  200  git push origin dev
+  201  git log
+  202  git diff 752e5c10fb57fb02876930cf492f964146affbe0 d5a0b2c55b849dc826f3b9f267dadc228f42e4e5
+  203  git diff d5a0b2c55b849dc826f3b9f267dadc228f42e4e5 752e5c10fb57fb02876930cf492f964146affbe0 
+  204  git lo
+  205  git log
+  206  git revert f3fe189360b468cc6b42200aca4cd02e14e5c250
+  207  git revert 0aff208b19651244db18d99d6606ba56828234a9
+  208  git push origin dev
+  209  git log
+  210  git reset --hard f3fe189360b468cc6b42200aca4cd02e14e5c250
+  211  git log
+  212  ls -l
+  213  git branch
+  214  git config --list
+  215  git push origin dev --force
+  216  git checkout master
+  217  git checkout -b qa
+  218  ls -l
+  219  echo "file3" > file3
+  220  git add file3
+  221  git commit -m "new file commit"
+  222  git push origin qa
+  223  git checkout dev
+  224  git merge qa
+  225  ls -l
+  226  git push origin dev
+  227  git branch
+  228  ls -l
+  229  vim file3
+  230  git rebase master
+  231  git add file3
+  232  git commit -m "update file3"
+  233  git push origin mater
+  234  git push origin dev
+  235  git rebase master
+  217  git checkout -b qa
+  218  ls -l
+  219  echo "file3" > file3
+  220  git add file3
+  221  git commit -m "new file commit"
+  222  git push origin qa
+  223  git checkout dev
+  224  git merge qa
+  225  ls -l
+  226  git push origin dev
+  227  git branch
+  228  ls -l
+  229  vim file3
+  230  git rebase master
+  231  git add file3
+  232  git commit -m "update file3"
+  233  git push origin mater
+  234  git push origin dev
+  235  git rebase master
+  236  git branch -a
+  237  ls -l
+  238  git rebase master
+  239  ls -l
+  240  git pull
+  241  git rebase master
+  242  git checkout master
+  243  git pull
+  244  ls -l
+  245  git checkout dev
+  246  git rebase master
+  247  ls -l
+  248  git log
+  249  history 

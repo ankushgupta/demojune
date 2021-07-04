@@ -64,3 +64,37 @@
    62  man ls
    63  man grep
    64  history 
+   65  docker --version
+   66  apt-get install apache2
+   67  docker ps
+   68  docker stop 397ea8f5dcdf   
+   69  systemctl start apache2
+   70  ps -ef| grep -i apach2
+   71  ps -ef| grep -i apache2
+   72  kill -9 11152     
+   73  ps -ef| grep -i apache2
+   74  docker ps -a
+   75  docker rm 0827fbd82ef5   
+   76  docker ps -a
+   77  docker images
+   78  docker rmi a6eb2a334a9f   
+   79  history 
+   80  docker run -it -d --name demo_apache ubuntu:16.04 /bin/bash
+   81  docker ps
+   82  docker exec -it 214b84bd6157   /bin/bash
+   83  docker ps
+   84  docker commit 214b84bd6157   demo
+   85  docker commit 214b84bd6157   demo_apache_image
+   86  docker images
+   87  docker run -it -d demo_apache_image    /bin/bash
+   88  docker exec -it a164 /bin/bash
+   89  docker images
+   90  docker pull jenkins
+   91  docker pull tomcat
+   92  docker login
+   93  docker tag demo_apache_image    ankushgupta0727/demo_apache_image:latest
+   94  docker images
+   95* docker push exmple.com/ankushgupta0727/demo_apache_image   
+   96  docker tag demo_apache_image    example.com/ankushgupta0727/demo_apache_image:latest
+   97  docker images
+   98  history 

@@ -1,0 +1,66 @@
+ root@docker:~# history 
+    1  apt-get update
+    2  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+    3  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    4  sudo apt-get update
+    5  sudo apt-get install docker-ce docker-ce-cli containerd.io
+    6  docker ps
+    7  docker images
+    8  cd /var/lib/docker
+    9  ls -l
+   10  cd
+   11  docker search ubuntu
+   12  docker pull ubuntu:16.04
+   13  docker images
+   14  docker run -it --name vikas ubuntu:16.04 /bin/bash
+   15  docker run -it -d --name venu ubuntu:16.04 /bin/bash
+   16  docker run -it -d --name  aditya ubuntu:16.04 /bin/bash
+   17  docker exec -it 57e5eb8de26d   /bin/bash
+   18  docker ps
+   19  docker inspect 57e5eb8de26d   
+   20  docker run -it -d -p 80:80 --name apache ubuntu:16.04 /bin/bash
+   21  docker run -it -d -p 80:80 --name apache1 ubuntu:16.04 /bin/bash
+   22  netstat -tunlp
+   23  docker run -it -d -p 81:80 --name apache2 ubuntu:16.04 /bin/bash
+   24  netstat -tunlp
+   25  docker exec -it 397ea8f5dcdf    /bin/bash
+   26  docker exec -it a9ee8908d48c     /bin/bash
+   27  docker run -it -d nginx /bin/bash
+   28  docker ps
+   29  docker run -it -d -p 8080:80  nginx /bin/bash
+   30  docker ps
+   31  docker logs 6af283dd7b70   
+   32  curl -v http://172.17.0.6
+    33  ping 172.17.0.6
+   34  curl -v http://172.17.0.6
+   35  docker pull nginx:alpine
+   36  docker run -d -p 8080:80  nginx
+   37  docker run -d -p 8081:80  nginx
+   38  docker logs 5f25
+   39  free -m
+   40  top
+   41  echo $SHELL
+   42  docker ps
+   43  docker ps -a
+   44  docker start a9ee8908d48c   
+   45  docker ps
+   46  curl -v http://localhost:81
+   47  curl -v http://localhost
+   48  docker ps
+   49  sleep 10
+   50* 
+   51  history 
+   52  docker run -d ubuntu
+   53  docek rimages
+   54  docker images
+   55  docker run -d ubuntu:16.04
+   56  docker ps
+   57  docker ps -a
+   58  history 
+   59  docker ps
+   60  docker exec -it 5f2577bcf3c1    /bin/bash
+   61  ps -ef | grep -i docker
+   62  man ls
+   63  man grep
+   64  history 

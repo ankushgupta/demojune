@@ -98,3 +98,147 @@
    96  docker tag demo_apache_image    example.com/ankushgupta0727/demo_apache_image:latest
    97  docker images
    98  history 
+99  docker run -it -d demo_apache_image    /bin/bash
+  100  docker exec -it a164 /bin/bash
+  101  docker images
+  102  docker pull jenkins
+  103  docker pull tomcat
+  104  docker login
+  105  docker tag demo_apache_image    ankushgupta0727/demo_apache_image:latest
+  106  docker images
+  107  docker push exmple.com/ankushgupta0727/demo_apache_image   
+  108  docker tag demo_apache_image    example.com/ankushgupta0727/demo_apache_image:latest
+  109  docker images
+  110  history 
+  111  docker ps
+  112  docker images
+  113  docker pull nginx:alpine
+  114  docker images
+  115  docker rmi ankushgupta0727/demo_apache_image
+  116  docker pull ankushgupta0727/demo_apache_image
+  117  ls -l
+  118  ssh -i /home/sharmaaditya1709/demoadi.pem ec2-user@ec2-13-233-137-242.ap-south-1.compute.amazonaws.com
+  119  docker images
+  120  docker pull registry
+  121  docker run -d  -l 5000:5000 registry
+  122  docker pls
+  123  docker ps
+  124  docker stop 6756872e8b53   ; docker rm 6756872e8b53   
+  125  docker run -d  -p 5000:5000 registry
+  126  docker ps
+  127  docker tag demo_apache_image   localhost:5000/demo_apache_image:latest
+  128  docker images
+  129  docker push localhost:5000/demo_apache_image
+  130  docker images
+   131  docker rmi ankushgupta0727/demo_apache_image localhost:5000/demo_apache_image   demo_apache_image                               
+  132  docker images
+  133  docker rmi 52063053c079   
+  134  docker rmi 52063053c079    -f
+  135  docker rmi -f 52063053c079  
+  136  docker ps
+  137  docker stop a16425b9796a
+  138  docker rm a16425b9796a
+  139  docker rmi -f 52063053c079  
+  140  docker images
+  141  docker pull localhost:5000/demo_apache_image
+  142  docker images
+  143  vim DOckerfile
+  144  vim Dockerfile
+  145  docker build -t test_apache .
+  146  vim Dockerfile 
+  147  docker build -t test_apache .
+  148  ls -l
+  149  echo "hello world" > index.html
+  150  docker build -t test_apache .
+  151  docker build -t -p 8081:80 test_apache .
+  152  docker build -d -p 8081:80 test_apache .
+  153  docker run -d -p 8081:80 test_apache .
+  154  docker run -d -p 8083:80 test_apache 
+  155  docker ps
+  156  docker run -it -p 8084:80 test_apache /bin/bash
+  157  docker run -it -d -p 8084:80 test_apache /bin/bash
+  158  docker ps
+  159  vim Dockerfile 
+  160  docker build -t test_apache1 .
+  161  docker run -d -p 8085:80 test_apache1 
+   162  docker ps
+  163  docker run -d -it -p 8086:80 test_apache1 /bin/bahs
+  164  docker ps
+  165  docker run -d -it -p 8087:80 test_apache1 /bin/bash
+  166  docker ps
+  167  history 
+  168  l -l
+  169  ls -l
+  170  mkdir demo
+  171  cd demo/
+  172  vim Dockerfile
+  173  docker build -t demo
+  174  docker build -t demo_ping .
+  175  docker run demo_ping
+  176  docker run demo_ping docker
+  177  cat Dockerfile 
+  178  docker ps
+  179  docker log b28cd2afde05   
+  180  docker logs b28cd2afde05   
+  181  docker exec -it b28cd2afde05   /bin/bash
+  182  cd ..
+  183  vim Dockerfile 
+  184  docker ps
+  185  docker run -d ubuntu
+  186  docker ps
+  187  docker ps -a
+  188  docker run -it -d ubuntu /bin/bash
+  189  docker ps
+  190  docker exec -it b28cd2afde05   /bin/bash
+  191  history 
+  192  docker volume ls
+  193  docker volume create myvol 
+  194  docker volume ls
+  195  cd /var/lib/docker/volumes/
+  196  ls -l
+    197  cd myvol/
+  198  ls -l
+  199  _dvd_devices 
+  200  cd _data/
+  201  ls -l
+  202  cd
+  203  docker run -it -d --mount source=myvol,destination=/tmp/ ubuntu /bin/bash 
+  204  docker exec -it 4754 /bin/bash
+  205  cd -
+  206  ls -l
+  207  docker stop 4754; docker rm 4754
+  208  ls -l
+  209  cd 
+  210  mkdir /data
+  211  docker run -it -d -v /data:/tmp ubuntu /bin/bash
+  212  docker exec -ut ab17
+  213  docker exec -it ab17 /bin/bash
+  214  cd /data/
+  215  ls -l
+  216  docker stop ab17; docker rm ab17
+  217  ls -l
+  218  docker run -it --name container1 -d ubuntu
+  219  docker ps
+  220  docker run -it --name container2 --link container1 -d ubuntu /bin/bash
+  221  docker ps
+  222  docker exec -it 9b20f93ac6cb    /bin/bash
+  223  history 
+  224  docker exec -it 9b20f93ac6cb    /bin/bash
+  225  history 
+root@docker:/data# 
+
+root@docker:~# cat Dockerfile 
+FROM ubuntu:16.04
+
+RUN apt-get update && apt-get install apache2 -y
+ADD index.html /var/www/html
+EXPOSE 80
+ENV NAME Devops
+ENTRYPOINT apachectl -D FOREGROUND
+root@docker:~# 
+
+root@docker:~/demo# cat Dockerfile 
+FROM ubuntu:trusty
+ENTRYPOINT ["/bin/ping", "-c","3"]
+CMD ["localhost"]
+

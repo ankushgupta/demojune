@@ -242,3 +242,4 @@ FROM ubuntu:trusty
 ENTRYPOINT ["/bin/ping", "-c","3"]
 CMD ["localhost"]
 
+https://www.cloudflare.com/en-in/learning/dns/what-is-dns/
